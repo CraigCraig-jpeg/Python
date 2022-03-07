@@ -8,7 +8,7 @@ if var == "lol" :
 else :
     print("hi")
 if 20 % 2 == 0:
-    print("fuck")
+    print("lo")
 elif 10 * 10 == 2 :
     print("non")
 
@@ -49,15 +49,15 @@ function("cap")
 
 print(dictionary["key2"])
 
-dictitude2 = {"key":"value"}
-dictitude3 = {"key":"value"}
-dictitude = [dictitude2 , dictitude3 ]
+titude2 = {"key":"value"}
+titude3 = {"key":"value"}
+titude = [titude2 , titude3 ]
 
-dictitude5 = ["man" , "dick"]
-dictitude6 = ["man" , "dicker "]
-dictitude4 = {"man":dictitude5 , "female":dictitude6}
+titude5 = ["man" , "di"]
+titude6 = ["man" , "di "]
+titude4 = {"man":titude5 , "female":titude6}
 
-print(dictitude[0])
-print(dictitude4["man"])
+print(titude[0])
+print(titude4["man"])
 
 print(b)
