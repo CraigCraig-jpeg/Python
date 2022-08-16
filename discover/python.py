@@ -39,7 +39,7 @@ for resource in rg_result:
 
     for resources in resource_list:
         print(f' --> {resources.name}')
-        nodes.append(f"[*] --> {resources.name}")
+        nodes.append(f"[*] --> {resources.name.replace('-', '_')}")
 
     # export a template of the resource group
     BODY = {'resources': ['*']}
@@ -54,7 +54,7 @@ for resource in rg_result:
 
     # create mermaid diagrams for the resources groups
     mytemplate = Template(filename='template.pyhtml')
-    templated = mytemplate.render(resource_group_template=(nodes),resource_group_template_name=(resource.name))
+    templated = mytemplate.render(resource_group_template=(nodes),resource_group_template_name=(resource.name.replace('-', '_')))
     print(templated)
 
     # create a file and copy it to the directory created earlier

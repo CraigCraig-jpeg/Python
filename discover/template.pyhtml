@@ -11,8 +11,8 @@ def mm(graph):
 mm("""
 stateDiagram-v2
 state ${resource_group_template_name} {
-    %for master in resource_group_template:
-        ${master}
-        %endfor
+%for master in resource_group_template:
+  ${master}
+  %endfor
 }
 """)
